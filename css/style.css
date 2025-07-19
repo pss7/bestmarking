@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* 가운데영역 */
+.container{max-width: 1620px; margin: 0 auto; padding: 0 20px;}
+.inner{max-width: 1724px; margin: 0 auto; padding: 0 20px;}
+
+/* 헤더 */
+#headerWrap{padding-left: 40px; position: absolute; top:0; left:0; right:0; display: flex; align-items: center; justify-content: space-between; background-color: #fff; z-index: 999;}
+#headerWrap .logoBox h1 a{padding: 4px 0;}
+#headerWrap .logoBox h1 a,
+#headerWrap .logoBox h1 a img{display: block;}
+#headerWrap .infoList{display: flex; align-items: center;}
+#headerWrap .infoList li{margin-right: -1px;}
+#headerWrap .infoList li a{display: block; padding: 18px 40px; background-color: #FAFAFA; border: 1px solid #E9E9E9; border-width: 0 1px;}
+#headerWrap .infoList li a.kakao{background-color: #FFD13B;}
+#headerWrap .infoList li a{font-size: 18px; color: #000;}
+
+@media (max-width: 1199px){
+
+  #headerWrap .infoList{display: none;}
+  #headerWrap{padding: 0 20px; justify-content: center;}
+  #headerWrap .logoBox h1 a img{margin: 0 auto; padding: 7px 0; width: 130px;}
+
+}
+
+/* 푸터 */
+#footerWrap{padding: 60px; position: relative; background-color: #fff; word-break: keep-all;}
+#footerWrap .snsLink{position: absolute; top:63px; right:66px; display: flex; align-items: center; gap: 0 20px;}
+#footerWrap .snsLink li a,
+#footerWrap .snsLink li a img{display: block;}
+#footerWrap .footerLogoBox h1{margin-bottom: 27px; color: #898989; font-size: 16px;}
+#footerWrap address{color: #898989; font-weight: 300; line-height: 1.5;}
+#footerWrap .bestmarking{display: block; margin-top: 30px; font-weight: 500; color: #828282;}
+#footerWrap .copyright{display: block; font-weight: 500; color: #828282; line-height: 1.5;}
+
+@media (max-width: 1199px){
+
+  #footerWrap{padding: 60px 20px; text-align: center; }
+  #footerWrap .snsLink{margin-top: 50px; position: static; justify-content: center;}
+
+}
+
+@media (max-width: 767px){
+ 
+  #footerWrap{padding: 7.82vw 20px;}
+  #footerWrap .footerLogoBox h1{margin-bottom: 3.52vw;}
+  #footerWrap .bestmarking{margin-top: 3.91vw;}
+  #footerWrap .footerLogoBox h1,
+  #footerWrap{font-size: 1.96vw;}
+  #footerWrap .snsLink{margin-top: 6.52vw;}
+
+}
+
+@media (max-width: 480px){
+
+  #footerWrap{padding: 13vw 20px 8vw;}
+  #footerWrap .snsLink{gap: 0 15px;}
+  #footerWrap .footerLogoBox h1,
+  #footerWrap{font-size: 3.5vw;}
+
+}
+
