@@ -1,51 +1,35 @@
 
 $(function () {
 
-gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.matchMedia({
-  "(min-width: 1200px)": () => {
-    const boxCount = 4;
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#introduceWrap07",
-        start: "top top",
-        end: `+=${boxCount * 100}%`,
-        scrub: true,
-        pin: true,
-        anticipatePin: 1,
-        invalidateOnRefresh: true,
-      }
-    });
+  ScrollTrigger.matchMedia({
+    "(min-width: 1200px)": () => {
+      const boxCount = 4;
+      const timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#introduceWrap07",
+          start: "top top",
+          end: `+=${boxCount * 100}%`,
+          scrub: true,
+          pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        }
+      });
 
-    timeline.to(".scrollBox01", { yPercent: -100, opacity: 0 }, 0);
-    timeline.fromTo(".scrollBox02", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 0.5);
+      timeline.to(".scrollBox01", { yPercent: -100, opacity: 0 }, 0);
+      timeline.fromTo(".scrollBox02", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 0.5);
 
-    timeline.to(".scrollBox02", { yPercent: -100, opacity: 0 }, 1);
-    timeline.fromTo(".scrollBox03", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 1.5);
+      timeline.to(".scrollBox02", { yPercent: -100, opacity: 0 }, 1);
+      timeline.fromTo(".scrollBox03", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 1.5);
 
-    timeline.to(".scrollBox03", { yPercent: -100, opacity: 0 }, 2);
-    timeline.fromTo(".scrollBox04", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 2.5);
-  },
-  "(max-width: 767px)": () => {
-    // 모바일에서는 ScrollTrigger 비활성화 및 초기화
-    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      timeline.to(".scrollBox03", { yPercent: -100, opacity: 0 }, 2);
+      timeline.fromTo(".scrollBox04", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 2.5);
+    },
 
-    // 애니메이션으로 바뀐 요소들을 원래 상태로 돌리기 (필요하면)
-    gsap.set([".scrollBox01", ".scrollBox02", ".scrollBox03", ".scrollBox04"], {
-      clearProps: "all",
-      opacity: 1,
-      xPercent: 0,
-      yPercent: 0,
-    });
-  }
-});
+  });
 
-
-
-
-
-  
   $(window).scroll(function () {
     let scrollPos = $(window).scrollTop();
 
