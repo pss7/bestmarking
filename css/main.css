@@ -118,7 +118,15 @@
 #introduceWrap01 .tabMenu li .tabBtn{display: block; margin: 0 auto; width: 114px; height: 40px; text-align: center; color: #fff; font-size: 20px; color: #fff;}
 #introduceWrap01 .tabMenu li .tabBtn.active{background-color: #079FE0; border-radius: 50px;}
 #introduceWrap01 .tabContent{position: relative; max-width: 1200px; height: 0; padding-top: 39%; margin: 0 auto; border: 20px solid #202020;}
-#introduceWrap01 .tabContent img{position: absolute; top:0; left:0; right:0; bottom: 0; display: block; width: 100%; height: 100%; object-fit: cover;}
+#introduceWrap01 .tabContent .img img{position: absolute; top:0; left:0; right:0; bottom: 0; display: block; width: 100%; height: 100%; object-fit: cover;}
+#introduceWrap01 .tabContent .tabImg{width: 1680px; position: absolute; left:50%; right:0; bottom: -118px; transform: translateX(-50%);}
+#introduceWrap01 .tabContent .tabImg img{display: block; max-width: 100%;}
+
+@media (max-width: 1580px){
+
+  #introduceWrap01 .tabContent .tabImg{bottom: -7.47vw; width: auto; left:0; transform: none;}
+
+}
 
 @media (max-width: 1199px){
 
@@ -143,7 +151,7 @@
 
 @media (max-width: 767px){
 
-  
+  #introduceWrap01{padding: 100px 0 90px;}
   #introduceWrap01 .tabMenu{padding: 20px 10px; height: auto; flex-wrap: wrap; justify-content: flex-start; border-radius: 5px;}
   #introduceWrap01 .tabMenu li{margin-bottom: 15px; flex: none; width: 33.33%;}
   #introduceWrap01 .tabMenu li:last-child{margin-bottom: 0;}
