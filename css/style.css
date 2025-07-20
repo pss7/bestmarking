@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+.text-center{text-align: center!important;}
+
 /* 가운데영역 */
 .container{max-width: 1620px; margin: 0 auto; padding: 0 20px;}
 .inner{max-width: 1724px; margin: 0 auto; padding: 0 20px;}

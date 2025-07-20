@@ -334,6 +334,96 @@
 
 }
 
+/* 위치 영역 */
+#postionWrap{padding: 60px 0; background-color: #171717;}
+#postionWrap .titleBox{text-align: center;}
+#postionWrap .titleBox h3{margin-bottom: 10px; font-weight:300; font-size: 24px; color: #fff;}
+#postionWrap .titleBox .text01{font-size: 40px; color: #fff; font-weight: 700;}
+#postionWrap .mapBox img{position: relative; left: 120px; display: block; margin: 0 auto; max-width: 100%;}
+#postionWrap .text02{margin-bottom: 35px; text-align: center; font-size: 40px; color: #fff;}
+#postionWrap span{padding: 15px 30px; color: #fff; font-size: 40px; font-weight: 700; color: #fff; background-color: #079FE0; border-radius: 50px; letter-spacing: -2px; text-align: center;}
+#postionWrap .mobileText{display: none;}
+
+
+
+
+
+
+
+
+@media (max-width: 1199px){
+
+  #postionWrap .titleBox h3{font-size: 22px;}
+  #postionWrap .titleBox .text01{font-size: 32px;}
+  #postionWrap .text02{font-size: 32px;}
+  #postionWrap span{font-size: 32px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #postionWrap .titleBox h3{font-size: 20px;}
+  #postionWrap .titleBox .text01{font-size: 28px;}
+  #postionWrap .text02{font-size: 28px;}
+  #postionWrap span{font-size: 28px;}
+
+}
+
+@media (max-width: 767px){
+
+  #postionWrap .titleBox h3{font-size: 18px;}
+  #postionWrap .text02,
+  #postionWrap .titleBox .text01{font-size: 24px;}
+  #postionWrap .mobileText{display: block; border-radius: 5px; font-size: 24px;}
+  #postionWrap .mobileText em{display: block;}
+  #postionWrap span{display: none;}
+  #postionWrap .mapBox img{left: 70px;}
+  
+}
+
+@media (max-width: 480px){
+
+  #postionWrap .titleBox h3{font-size: 16px;}
+  #postionWrap .text02 br{display: none;}
+  #postionWrap .text02,
+  #postionWrap .mobileText,
+  #postionWrap .titleBox .text01{font-size: 20px;}
+
+}
+
+@media (max-width:414px){
+
+  #postionWrap .mapBox img{left: 50px;}
+
+}
+
+@media (max-width: 360px){
+
+  #postionWrap .text02,
+  #postionWrap .mobileText,
+  #postionWrap .titleBox .text01{font-size: 18px;}
+  
+}
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 파트너 영역 */
 #partnerWrap{padding: 0 0 87px; background-color: #262626;}
 #partnerWrap .top {margin-bottom: 76px; padding: 55px 0 0; position: relative; height: 645px; background-color: #1D1B1B; background-repeat: no-repeat; background-position: center top; clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%); z-index: 2;}
