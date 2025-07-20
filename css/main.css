@@ -472,6 +472,7 @@
   #introduceWrap05 .tabList li a span{font-size: 24px;}
   #introduceWrap05 .tabList li a::before{width: 80px; height: 80px;}
   #introduceWrap05 .tabList li a::after{width: 30px; height: 30px;}
+  #introduceWrap05 .slide{width: 450px;}
 
 }
 
@@ -484,6 +485,7 @@
   #introduceWrap05 .tabList li a h3{font-size: 18px;}
   #introduceWrap05 .tabList li a::before{width: 60px; height: 60px;}
   #introduceWrap05 .tabList li a{padding: 20px 50px 20px 76px;}
+  #introduceWrap05 .slide{width: 350px;}
 
 }
 
@@ -493,15 +495,29 @@
   #introduceWrap05 .imgBox{flex-direction: column; gap: 0;}
   #introduceWrap05 .text02 p,
   #introduceWrap05 .text02 span{font-size: 25px;}
-  #introduceWrap05 .text02{margin: 0 auto; gap: 4px 0;}
+  #introduceWrap05 .text02{margin: 0 auto 35px; gap: 4px 0;}
   #introduceWrap05 .tabList li .imgContentBox .box{flex-direction: column; align-items: center;}
-  
+  #introduceWrap05 .slide{width: 300px;}
+
+}
+
+@media (max-width: 480px){
+
+  #introduceWrap05 .slide{width: 200px;}
+
 }
 
 @media (max-width: 414px){
 
   #introduceWrap05 .text02 p,
   #introduceWrap05 .text02 span{font-size: 22px;}
+  #introduceWrap05 .slide{width: 150px;}
+
+}
+
+@media (max-width: 360px){
+
+  #introduceWrap05 .slide{width: 130px;}
 
 }
 
