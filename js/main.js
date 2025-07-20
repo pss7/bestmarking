@@ -30,6 +30,24 @@ $(function () {
     speed: 1500,
   });
 
+  
+  $("#introduceWrap04 .slick").slick({
+    autoplay: true,
+    arrows: false,
+    variableWidth: true,
+    dots: false,
+    accessibility: false,
+    draggable: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    zIndex: 1000,
+    pauseOnHover: false,
+    autoplaySpeed: 6000,
+    centerMode: true,
+    speed: 1500,
+  });
+
   // $('.mainBox .leftBox .control button').on('click', function (e) {
   //   e.preventDefault();
   //   if ($(this).hasClass('pause')) {
