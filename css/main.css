@@ -371,21 +371,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 소개 영역04 */
 #introduceWrap04{padding: 80px 0}
 #introduceWrap04 .titleBox{margin-bottom: 80px;}
@@ -568,6 +553,100 @@
 
 }
 
+
+
+
+/* 소개 영역07 */
+#introduceWrap07{height: 100vh; padding: 120px 0 85px; background: url(../images/main/bg03.svg)no-repeat center; background-size: cover;}
+#introduceWrap07 .title{margin-bottom: 55px; text-align: center; font-size: 48px; font-weight: 700; color: #fff;}
+#introduceWrap07 .layoutBox{display: flex; justify-content: center; align-items: center; gap: 0 80px;}
+#introduceWrap07 .infoBox:nth-of-type(1) .box{background-color: rgba(7, 159, 224, 0.66);
+}
+#introduceWrap07 .infoBox:nth-of-type(2) .box{background-color: rgba(160, 39, 73, 0.66);}
+#introduceWrap07 .infoBox{text-align: center;}
+#introduceWrap07 .infoBox .text01{display: block; margin-bottom: 20px; font-size: 24px; font-weight: 700; color: #fff;}
+#introduceWrap07 .infoBox .text02{margin-bottom: 7px; font-size: 54px; font-weight: 700; color: #fff; line-height: 1.1;}
+#introduceWrap07 .infoBox .text03{font-size: 24px; font-weight: 700; color: #fff;}
+#introduceWrap07 .infoBox .box{margin-bottom: 20px; display: flex; flex-direction: column; gap: 10px 0; align-items: center; justify-content: center; width: 427px; height: 427px; border-radius: 50%; text-align: center;}
+#introduceWrap07 .infoBox .box em{display: block; font-size: 24px; font-weight: 700; color: #fff;}
+#introduceWrap07 .infoBox .text04{display: block; text-align: center; font-size: 24px; font-weight: 700; color: #fff;}
+#introduceWrap07 .infoBox p{text-align: center; color: #fff; font-size: 24px; font-weight: 700; line-height: 2;}
+#introduceWrap07 .text05{flex-shrink: 0; color: #fff; font-size: 96px; font-weight: 800;}
+
+@media (max-width: 1199px){
+
+  #introduceWrap07 .title{font-size: 36px;}
+  #introduceWrap07 .infoBox p,
+  #introduceWrap07 .infoBox .text03,
+  #introduceWrap07 .infoBox .box em,
+  #introduceWrap07 .infoBox .text04,
+  #introduceWrap07 .infoBox .text01{font-size: 20px;}
+  #introduceWrap07 .infoBox .text02{font-size: 48px;}
+  #introduceWrap07 .text05{font-size: 80px;}
+  #introduceWrap07 .infoBox .box{width: 350px; height: 350px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #introduceWrap07{height: auto;}
+  #introduceWrap07 .layoutBox{flex-direction: column; gap: 30px 0;}
+  #introduceWrap07 .title{font-size: 30px;}
+  #introduceWrap07 .infoBox p,
+  #introduceWrap07 .infoBox .text03,
+  #introduceWrap07 .infoBox .box em,
+  #introduceWrap07 .infoBox .text04,
+  #introduceWrap07 .infoBox .text01{font-size: 18px;}
+  #introduceWrap07 .infoBox .text02{font-size: 28px;}
+  #introduceWrap07 .text05{font-size: 70px;}
+  #introduceWrap07 .infoBox .box{width: 300px; height: 300px;}
+
+}
+
+@media (max-width: 767px){
+
+  #introduceWrap07 .title{font-size: 24px;}
+  #introduceWrap07 .infoBox p,
+  #introduceWrap07 .infoBox .text03,
+  #introduceWrap07 .infoBox .box em,
+  #introduceWrap07 .infoBox .text04,
+  #introduceWrap07 .infoBox .text01{font-size: 16px;}
+  #introduceWrap07 .infoBox .text02{font-size: 22px;}
+  #introduceWrap07 .text05{font-size: 50px;}
+  #introduceWrap07 .infoBox .box{width: 250px; height: 250px;}
+
+}
+
+@media (max-width: 414px){
+
+  #introduceWrap07{padding: 80px 0;}
+  #introduceWrap07 .title{font-size: 22px;}
+  #introduceWrap07 .infoBox p{line-height: 1.7;}
+  #introduceWrap07 .infoBox p,
+  #introduceWrap07 .infoBox .text03,
+  #introduceWrap07 .infoBox .box em,
+  #introduceWrap07 .infoBox .text04,
+  #introduceWrap07 .infoBox .text01{font-size: 14px;}
+  #introduceWrap07 .infoBox .text02{font-size: 16px;}
+  #introduceWrap07 .text05{font-size: 36px;}
+  #introduceWrap07 .infoBox .box{width: 200px; height: 200px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 위치 영역 */
 #postionWrap{padding: 60px 0; background-color: #171717;}
 #postionWrap .titleBox{text-align: center;}
@@ -577,14 +656,6 @@
 #postionWrap .text02{margin-bottom: 35px; text-align: center; font-size: 40px; color: #fff;}
 #postionWrap span{padding: 15px 30px; color: #fff; font-size: 40px; font-weight: 700; color: #fff; background-color: #079FE0; border-radius: 50px; letter-spacing: -2px; text-align: center;}
 #postionWrap .mobileText{display: none;}
-
-
-
-
-
-
-
-
 
 @media (max-width: 1199px){
 
@@ -639,25 +710,6 @@
   #postionWrap .titleBox .text01{font-size: 18px;}
   
 }
-
-
-
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 파트너 영역 */
 #partnerWrap{padding: 0 0 87px; background-color: #262626;}
