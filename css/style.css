@@ -7,7 +7,8 @@
 .inner{max-width: 1724px; margin: 0 auto; padding: 0 20px;}
 
 /* 헤더 */
-#headerWrap{padding-left: 40px; position: absolute; top:0; left:0; right:0; display: flex; align-items: center; justify-content: space-between; background-color: #fff; z-index: 999;}
+#headerWrap{padding-left: 40px; position: absolute; top:-300px; left:0; right:0; display: flex; align-items: center; justify-content: space-between; background-color: #fff; z-index: 999; transition: all .5s;}
+#headerWrap.active{top: 0;}
 #headerWrap .logoBox h1 a{padding: 4px 0;}
 #headerWrap .logoBox h1 a,
 #headerWrap .logoBox h1 a img{display: block;}

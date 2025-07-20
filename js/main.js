@@ -1,10 +1,6 @@
 
 $(function () {
 
-  // $(window).load(function () {
-  //   $('#visualWrap').addClass('active');
-  // });
-
   $("#introduceWrap02 .slick").slick({
     autoplay: true,
     arrows: false,
