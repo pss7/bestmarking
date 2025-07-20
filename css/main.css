@@ -334,6 +334,61 @@
 
 }
 
+/* 소개 영역06 */
+#introduceWrap06{background-color: #171717; padding: 0 20px;}
+#introduceWrap06 .box{max-width: 1176px; height: 100vh; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
+#introduceWrap06 .box p{display: flex; align-items: center; justify-content: space-between; width: 100%; position: relative; text-align: center; color: #fff; font-size: 40px; font-weight: 700; word-break: keep-all;}
+#introduceWrap06 .box p::before{content: ''; width: 23px; height: 106px; background: url(../images/main/left.svg)no-repeat center; background-size: contain;}
+#introduceWrap06 .box p::after{content: ''; width: 23px; height: 106px; background: url(../images/main/right.svg)no-repeat center; background-size: contain;}
+
+@media (max-width: 1199px){
+
+  #introduceWrap06 .box p::before,
+  #introduceWrap06 .box p::after{width: 19px; height: 83px;}
+  #introduceWrap06 .box p{font-size: 36px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #introduceWrap06 .box p::before,
+  #introduceWrap06 .box p::after{width: 15px; height: 72px;}
+  #introduceWrap06 .box p{font-size: 30px;}
+
+}
+
+@media (max-width: 767px){
+
+  #introduceWrap06 .box p::before,
+  #introduceWrap06 .box p::after{width: 12px; height: 58px;}
+  #introduceWrap06 .box p{font-size: 22px;}
+
+}
+
+@media (max-width: 576px){
+
+  #introduceWrap06 .box p::before,
+  #introduceWrap06 .box p::after{width: 9px; height: 42px;}
+  #introduceWrap06 .box p{font-size: 20px;}
+
+}
+
+@media (max-width: 480px){
+
+  #introduceWrap06 .box p::before,
+  #introduceWrap06 .box p::after{width: 9px; height: 42px;}
+  #introduceWrap06 .box p{font-size: 16px;}
+
+}
+
+@media (max-width: 414px){
+
+  #introduceWrap06 .box p::before,
+  #introduceWrap06 .box p::after{width: 7px; height: 35px;}
+  #introduceWrap06 .box p{font-size: 14px;}
+
+}
+
 /* 위치 영역 */
 #postionWrap{padding: 60px 0; background-color: #171717;}
 #postionWrap .titleBox{text-align: center;}
@@ -343,6 +398,7 @@
 #postionWrap .text02{margin-bottom: 35px; text-align: center; font-size: 40px; color: #fff;}
 #postionWrap span{padding: 15px 30px; color: #fff; font-size: 40px; font-weight: 700; color: #fff; background-color: #079FE0; border-radius: 50px; letter-spacing: -2px; text-align: center;}
 #postionWrap .mobileText{display: none;}
+
 
 
 
