@@ -1,34 +1,31 @@
 
 $(function () {
 
-  gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-  ScrollTrigger.matchMedia({
-    "(min-width: 1200px)": () => {
-      const boxCount = 4;
-      const timeline = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#introduceWrap07",
-          start: "top top",
-          end: `+=${boxCount * 100}%`,
-          scrub: true,
-          pin: true,
-          anticipatePin: 1,
-          invalidateOnRefresh: true,
-        }
-      });
+ScrollTrigger.matchMedia({
+  "(min-width: 1200px)": () => {
+    const boxCount = 4;
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#introduceWrap07",
+        start: "top top",
+        end: `+=${boxCount * 110}%`, // +10% 여유 두기
+        scrub: true,
+        pin: true,
+        anticipatePin: 2,  // 핀 유지 좀 더 길게
+        invalidateOnRefresh: true,
+      }
+    });
 
-      timeline.to(".scrollBox01", { yPercent: -100, opacity: 0 }, 0);
-      timeline.fromTo(".scrollBox02", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 0.5);
-
-      timeline.to(".scrollBox02", { yPercent: -100, opacity: 0 }, 1);
-      timeline.fromTo(".scrollBox03", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 1.5);
-
-      timeline.to(".scrollBox03", { yPercent: -100, opacity: 0 }, 2);
-      timeline.fromTo(".scrollBox04", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 2.5);
-    },
-
-  });
+    timeline.to(".scrollBox01", { yPercent: -100, opacity: 0 }, 0);
+    timeline.fromTo(".scrollBox02", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 0.5);
+    timeline.to(".scrollBox02", { yPercent: -100, opacity: 0 }, 1);
+    timeline.fromTo(".scrollBox03", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 1.5);
+    timeline.to(".scrollBox03", { yPercent: -100, opacity: 0 }, 2);
+    timeline.fromTo(".scrollBox04", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 2.5);
+  }
+});
 
   $(window).scroll(function () {
     let scrollPos = $(window).scrollTop();
@@ -122,7 +119,5 @@ $(function () {
     $('#introduceWrap01 .tabContent').eq(idx).show();
 
   });
-
-
 
 });
