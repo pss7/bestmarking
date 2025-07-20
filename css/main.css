@@ -335,6 +335,56 @@
 }
 
 
+/* 소개 영역03 */
+#introduceWrap03{display: flex; align-items: center; justify-content: center; height: 100vh; background: url(../images/main/bg02.svg)no-repeat center; background-size: cover;}
+#introduceWrap03 p{ text-align: center; font-size: 64px; color: #fff; font-weight: 700; line-height: 1.8; word-break: keep-all;} 
+
+
+
+@media (max-width: 1199px){
+
+  #introduceWrap03 p{font-size: 46px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #introduceWrap03 p{font-size: 36px;}
+
+}
+
+@media (max-width: 767px){
+
+  #introduceWrap03 p{font-size: 30px;}
+
+}
+
+@media (max-width: 480px){
+
+  #introduceWrap03 p{font-size: 26px;}
+
+}
+
+@media (max-width: 414px){
+
+  #introduceWrap03 p{font-size: 22px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 소개 영역04 */
 #introduceWrap04{padding: 80px 0}
@@ -389,12 +439,6 @@
   #introduceWrap04 .textBox strong{font-size: 22px;}
 
 }
-
-
-
-
-
-
 
 /* 소개 영역05 */
 #introduceWrap05{padding: 80px 0;}
