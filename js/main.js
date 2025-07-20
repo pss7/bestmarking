@@ -16,7 +16,7 @@ $(function () {
   $("#introduceWrap02 .slick").slick({
     autoplay: true,
     arrows: false,
-   	variableWidth: true,
+    variableWidth: true,
     dots: false,
     accessibility: false,
     draggable: true,
@@ -43,7 +43,19 @@ $(function () {
   //   }
   // });
 
-  //탭메뉴
+
+  //탭메뉴01
+  $('#introduceWrap05 .tabList li a').click(function () {
+    if ($(this).hasClass('active')) {
+      $('#introduceWrap05 .tabList li a').removeClass('active')
+    } else {
+      $('#introduceWrap05 .tabList li a').removeClass('active')
+      $(this).addClass('active');
+    }
+    return false;
+  });
+
+  //탭메뉴02
   $('#introduceWrap01 .tabContent').hide();
   $('#introduceWrap01 .tabContent').first().show();
 

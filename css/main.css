@@ -334,6 +334,97 @@
 
 }
 
+/* 소개 영역05 */
+#introduceWrap05{padding: 80px 0;}
+#introduceWrap05 .text01{margin-bottom: 160px;}
+#introduceWrap05 .text01 p{text-align: center; font-size: 48px; word-break: keep-all;}
+#introduceWrap05 .text01 p strong{font-size: 64px;}
+#introduceWrap05 .text02{max-width: 1360px; margin:0 auto 80px; display: flex; align-items: center; gap: 0 80px; justify-content: center; text-align: center;}
+#introduceWrap05 .text02 span{flex-shrink: 0; font-size: 64px; font-weight: 800; color: #000; text-align: right;}
+#introduceWrap05 .text02 p{font-size: 64px; font-weight: 800; color: #079FE0; letter-spacing: -1px;}
+#introduceWrap05 .imgBox{margin-bottom: 39px; display: flex; justify-content: center; align-items: center;}
+#introduceWrap05 .imgBox img{display: block; width: 100%;}
+#introduceWrap05 .tabList li a{padding: 20px 50px 20px 120px; position: relative; display: flex; flex-direction: column; gap: 0 0; justify-content: center; border-bottom: 1px solid #EBEBF1;}
+#introduceWrap05 .tabList li a::after{content: ''; width: 40px; height: 40px; position: absolute; top: 50%; transform: translateY(-50%); right:0; background: url(../images/main/arrow_icon04.svg)no-repeat center; background-size: contain;}
+#introduceWrap05 .tabList li a.active::after{transform: translateY(-50%) rotate(-180deg);}
+#introduceWrap05 .tabList li a.active + .imgContentBox{display: block;}
+#introduceWrap05 .tabList li a h3{margin-bottom: 12px; font-size: 32px; font-weight: 700; color: #000;}
+#introduceWrap05 .tabList li a span{display: block; font-size: 24px; font-weight: 300; color: #000;}
+#introduceWrap05 .tabList li a::before{content: ''; position: absolute; top:50%; left:0; transform: translateY(-50%); width: 100px; height: 100px; background-size: contain!important;} 
+#introduceWrap05 .tabList li:nth-child(1) a::before{background: url(../images/main/icon20.svg)no-repeat center;}
+#introduceWrap05 .tabList li:nth-child(2) a::before{background: url(../images/main/icon21.svg)no-repeat center;}
+#introduceWrap05 .tabList li:nth-child(3) a::before{background: url(../images/main/icon22.svg)no-repeat center;}
+#introduceWrap05 .tabList li .imgContentBox{display: none;}
+#introduceWrap05 .tabList li .imgContentBox .box{display: flex; align-items: center; justify-content: center; gap: 0 120px;} 
+#introduceWrap05 .tabList li .imgContentBox img{display: block; max-width: 100%;}
+
+@media (max-width: 1460px){
+
+  #introduceWrap05 .text02 p,
+  #introduceWrap05 .text02 span{font-size: 55px;}
+  
+}
+
+@media (max-width: 1199px){
+
+  #introduceWrap05 .text02 span br{display: none;}
+  #introduceWrap05 .text02{flex-direction: column; align-items: center; gap: 10px 0;}
+  #introduceWrap05 .text01{margin-bottom: 80px;}
+  #introduceWrap05 .text01 p strong{font-size: 50px;}
+  #introduceWrap05 .text01 p{font-size: 32px;}
+  #introduceWrap05 .text02 p,
+  #introduceWrap05 .text02 span{font-size: 40px;}
+  #introduceWrap05 .tabList li a h3{margin-bottom: 7px;}
+  #introduceWrap05 .tabList li a{padding: 20px 50px 20px 102px;}
+  #introduceWrap05 .tabList li a h3{font-size: 28px;}
+  #introduceWrap05 .tabList li a span{font-size: 24px;}
+  #introduceWrap05 .tabList li a::before{width: 80px; height: 80px;}
+  #introduceWrap05 .tabList li a::after{width: 30px; height: 30px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #introduceWrap05 .text01 p strong{font-size: 42px;}
+  #introduceWrap05 .text01 p{font-size: 28px;}
+  #introduceWrap05 .text02 p,
+  #introduceWrap05 .text02 span{font-size: 32px;}
+  #introduceWrap05 .tabList li a h3{margin-bottom: 5px;}
+  #introduceWrap05 .tabList li a span,
+  #introduceWrap05 .tabList li a h3{font-size: 18px;}
+  #introduceWrap05 .tabList li a::before{width: 60px; height: 60px;}
+  #introduceWrap05 .tabList li a{padding: 20px 50px 20px 76px;}
+
+}
+
+@media (max-width: 767px){
+
+  #introduceWrap05 .imgBox{flex-direction: column; gap: 0;}
+  #introduceWrap05 .text01{margin-bottom: 55px;}
+  #introduceWrap05 .text01 p strong{font-size: 30px;}
+  #introduceWrap05 .text01 p{font-size: 22px;}
+  #introduceWrap05 .text02 p,
+  #introduceWrap05 .text02 span{font-size: 25px;}
+  #introduceWrap05 .text02{margin: 0 auto; gap: 4px 0;}
+  #introduceWrap05 .tabList li .imgContentBox .box{flex-direction: column; align-items: center;}
+  
+}
+
+@media (max-width: 414px){
+
+  #introduceWrap05 .text01{margin-bottom: 35px;}
+  #introduceWrap05 .text01 p strong{font-size: 22px;}
+  #introduceWrap05 .text01 p{font-size: 18px;}
+  #introduceWrap05 .text02 p,
+  #introduceWrap05 .text02 span{font-size: 22px;}
+
+}
+
+
+
+
+
+
 /* 소개 영역06 */
 #introduceWrap06{background-color: #171717; padding: 0 20px;}
 #introduceWrap06 .box{max-width: 1176px; height: 100vh; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
