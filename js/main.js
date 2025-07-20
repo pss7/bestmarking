@@ -1,6 +1,52 @@
 
 $(function () {
 
+
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const texts = gsap.utils.toArray(".text");
+
+  if (!window.matchMedia("(max-width: 767px)").matches) {
+    // 데스크탑 이상에서만 실행
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#introduceWrap06",
+        start: "top top",
+        end: `+=${texts.length * 800}`, // 텍스트 개수에 따라 스크롤 길이 조절
+        scrub: true,
+        pin: true,
+      }
+    });
+
+    texts.forEach((text) => {
+      tl.to(text, {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+      });
+      tl.to(text, {
+        opacity: 0,
+        y: -200,
+        duration: 0.5,
+      }, "+=1.5"); // 유지 시간 조절
+    });
+  } else {
+    // 모바일일 때 텍스트는 기본 상태로 노출 (원하는 경우 추가 스타일 조절 가능)
+    texts.forEach(text => {
+      gsap.set(text, { opacity: 1, y: 0 });
+    });
+  }
+
+
+
+
+
+
+
+
+
+
   $("#introduceWrap02 .slick").slick({
     autoplay: true,
     arrows: false,
@@ -78,5 +124,7 @@ $(function () {
     $('#introduceWrap01 .tabContent').eq(idx).show();
 
   });
+
+
 
 });
