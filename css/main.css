@@ -951,6 +951,7 @@
   #partnerWrap .infoBox .box{width: 100%; min-height: auto;}
   #partnerWrap .infoBox .box h4{font-size: 18px;}
   #partnerWrap .top::before{width: 500px; height: 500px;}
+  #partnerWrap .infoBox .box::after{display: none;}
 
 }
 
