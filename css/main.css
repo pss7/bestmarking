@@ -342,41 +342,10 @@
 }
 
 
-/* 소개 영역03 */
-#introduceWrap03{display: flex; align-items: center; justify-content: center; height: 100vh; background: url(../images/main/bg02.svg)no-repeat center; background-size: cover;}
-#introduceWrap03 p{ text-align: center; font-size: 64px; color: #fff; font-weight: 700; line-height: 1.8; word-break: keep-all;} 
 
 
 
-@media (max-width: 1199px){
 
-  #introduceWrap03 p{font-size: 46px;}
-
-}
-
-@media (max-width: 1024px){
-
-  #introduceWrap03 p{font-size: 36px;}
-
-}
-
-@media (max-width: 767px){
-
-  #introduceWrap03 p{font-size: 30px;}
-
-}
-
-@media (max-width: 480px){
-
-  #introduceWrap03 p{font-size: 26px;}
-
-}
-
-@media (max-width: 414px){
-
-  #introduceWrap03 p{font-size: 22px;}
-
-}
 
 /* 소개 영역04 */
 #introduceWrap04{padding: 80px 0}
@@ -522,11 +491,10 @@
 }
 
 /* 소개 영역06 */
-
-#introduceWrap06 {position: relative; height: 100vh; background-color: #171717; padding: 0 20px; display: flex; justify-content: center; align-items: center; overflow: hidden;}
+#introduceWrap06 {position: relative;background-color: #171717; padding: 0 20px; display: flex; justify-content: center; align-items: center; overflow: hidden;}
 #introduceWrap06 .textBox{position: relative; width: 100%;
-  max-width: 1178px; height: 100px;}
-#introduceWrap06 .textBox .text{width: 100%; display: flex; justify-content: space-between; position: absolute; top: 0; text-align: center; color: #fff; font-size: 40px; font-weight: 700; word-break: keep-all; opacity: 0; transform: translateY(200px);}  
+  max-width: 1178px; height: 100%;}
+#introduceWrap06 .textBox .text{width: 100%; height: 100vh; display: flex; align-items: center; justify-content: space-between; text-align: center; color: #fff; font-size: 40px; font-weight: 700; word-break: keep-all;}  
 #introduceWrap06 .textBox .text::before{content: ''; width: 23px; height: 106px; background: url(../images/main/left.svg)no-repeat center; background-size: contain;}
 #introduceWrap06 .textBox .text::after{content: ''; width: 23px; height: 106px; background: url(../images/main/right.svg)no-repeat center; background-size: contain;}
 
@@ -583,209 +551,186 @@
 }
 
 /* 소개 영역07 */
-#introduceWrap07{padding: 80px 0; /*height: 100vh;*/ background-color: #000;}
-#introduceWrap07 .text01{max-width: 1454px; height: 1007px; margin: 0 auto; display: flex; justify-content: center; align-items: center; gap: 0 80px; background: url(../images/main/bg05.svg)no-repeat center; background-size: contain; text-align: center; letter-spacing: -1px;}
-#introduceWrap07 .text01 span{font-size: 96px; font-weight: 800; color: #fff; line-height: 1.1;}
-#introduceWrap07 .text01 p{font-size: 48px; font-weight: 700; color: #fff; text-align: left;}
-#introduceWrap07 .text02{text-align: center; color: #fff; font-size: 32px; font-weight: 500; line-height: 2;}
+#introduceWrap07{background-color: #000; overflow: hidden;}
+#introduceWrap07 .introduceBox{display: flex; width: 400vw; height: 100vh; overflow: hidden;}
+#introduceWrap07 .scrollBox{width: 100vw; height: 100vh; position: absolute;
+  top: 0; left: 0;}
+#introduceWrap07 .scrollBox01 .text01{max-width: 1454px; height: 1007px; margin: 0 auto; display: flex; justify-content: center; align-items: center; gap: 0 80px; background: url(../images/main/bg05.svg)no-repeat center; background-size: contain; text-align: center; letter-spacing: -1px;}
+#introduceWrap07 .scrollBox01 .text01 span{font-size: 96px; font-weight: 800; color: #fff; line-height: 1.1;}
+#introduceWrap07 .scrollBox01 .text01 p{font-size: 48px; font-weight: 700; color: #fff; text-align: left;}
+#introduceWrap07 .scrollBox01 .text02{text-align: center; color: #fff; font-size: 32px; font-weight: 500; line-height: 2;}
+#introduceWrap07 .scrollBox02{padding: 80px 120px;}
+#introduceWrap07 .scrollBox02 .top{padding: 69px 20px; margin-bottom: 120px; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 40px; overflow: hidden; z-index: 1;}
+#introduceWrap07 .scrollBox02 .top::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/bg06.svg) no-repeat center; background-size: cover; z-index: -1; transform: scale(1.5); transition: all 3s;}
+#introduceWrap07 .scrollBox02 .top.active::after{transform: scale(1);}
+#introduceWrap07 .scrollBox02 .top .title{font-size: 64px; font-weight: 800; color: #fff; text-align: center;}
+#introduceWrap07 .scrollBox02 .layoutBox{display: flex; align-items: center; gap: 0 140px; justify-content: center;}
+#introduceWrap07 .scrollBox02 .textBox{flex-shrink: 0;}
+#introduceWrap07 .scrollBox02 .textBox .text01{margin-bottom: 120px; font-size: 64px; font-weight: 800; color: #fff;}
+#introduceWrap07 .scrollBox02 .textBox .text02{font-size: 32px; font-weight: 500; color: #fff; line-height: 1.8;}
+#introduceWrap07 .scrollBox02 .box{height: 822px; border: 20px solid #4C4C4C; border-radius: 10px; overflow: hidden;}
+#introduceWrap07 .scrollBox02 .box img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#introduceWrap07 .scrollBox03{display: flex; align-items: center; justify-content: center; background: url(../images/main/bg02.svg)no-repeat center; background-size: cover;}
+#introduceWrap07 .scrollBox03 p{ text-align: center; font-size: 64px; color: #fff; font-weight: 700; line-height: 1.8; word-break: keep-all;} 
+#introduceWrap07 .scrollBox04{padding: 120px 0 85px; background: url(../images/main/bg03.svg)no-repeat center; background-size: cover;}
+#introduceWrap07 .scrollBox04 .title{margin-bottom: 55px; text-align: center; font-size: 48px; font-weight: 700; color: #fff;}
+#introduceWrap07 .scrollBox04 .layoutBox{display: flex; justify-content: center; align-items: center; gap: 0 80px;}
+#introduceWrap07 .scrollBox04 .infoBox:nth-of-type(1) .box{background-color: rgba(7, 159, 224, 0.66);
+}
+#introduceWrap07 .scrollBox04 .infoBox:nth-of-type(2) .box{background-color: rgba(160, 39, 73, 0.66);}
+#introduceWrap07 .scrollBox04 .infoBox{text-align: center;}
+#introduceWrap07 .scrollBox04 .infoBox .text01{display: block; margin-bottom: 20px; font-size: 24px; font-weight: 700; color: #fff;}
+#introduceWrap07 .scrollBox04 .infoBox .text02{margin-bottom: 7px; font-size: 54px; font-weight: 700; color: #fff; line-height: 1.1;}
+#introduceWrap07 .scrollBox04 .infoBox .text03{font-size: 24px; font-weight: 700; color: #fff;}
+#introduceWrap07 .scrollBox04 .infoBox .box{margin-bottom: 20px; display: flex; flex-direction: column; gap: 10px 0; align-items: center; justify-content: center; width: 427px; height: 427px; border-radius: 50%; text-align: center;}
+#introduceWrap07 .scrollBox04 .infoBox .box em{display: block; font-size: 24px; font-weight: 700; color: #fff;}
+#introduceWrap07 .scrollBox04 .infoBox .text04{display: block; text-align: center; font-size: 24px; font-weight: 700; color: #fff;}
+#introduceWrap07 .scrollBox04 .infoBox p{text-align: center; color: #fff; font-size: 24px; font-weight: 700; line-height: 2;}
+#introduceWrap07 .scrollBox04 .text05{flex-shrink: 0; color: #fff; font-size: 96px; font-weight: 800;}
+
+@media (max-width: 1600px){
+
+  #introduceWrap07 .scrollBox02 .layoutBox{flex-direction: column; gap: 30px 0;}
+  #introduceWrap07 .scrollBox02 .box{width: 100%;}
+  #introduceWrap07 .scrollBox02 .textBox .text01{margin-bottom: 68px; text-align: center;}
+  #introduceWrap07 .scrollBox02 .textBox .text02{text-align: center;}
+
+}
 
 @media (max-width: 1454px){
 
-  #introduceWrap07 .text01{max-width: 100.00vw; height: 69.26vw; gap: 0 5.50vw; letter-spacing: -0.07vw;}
-  #introduceWrap07 .text01 span{font-size: 6.60vw;  }
-  #introduceWrap07 .text01 p{font-size: 3.30vw;}
+  #introduceWrap07 .scrollBox01 .text01{max-width: 100.00vw; height: 69.26vw; gap: 0 5.50vw; letter-spacing: -0.07vw;}
+  #introduceWrap07 .scrollBox01 .text01 span{font-size: 6.60vw;  }
+  #introduceWrap07 .scrollBox01 .text01 p{font-size: 3.30vw;}
 
 }
 
 @media (max-width: 1199px){
 
-  #introduceWrap07 .text02{font-size: 26px;}
+  #introduceWrap07{padding: 80px 0 0;}
+  #introduceWrap07 .scrollBox01 .text02{font-size: 26px;}
+  #introduceWrap07 .scrollBox02 .top{border-radius: 20px;}
+  #introduceWrap07 .scrollBox02 .top .title{font-size: 46px;}
+  #introduceWrap07 .scrollBox02 .textBox .text01{font-size: 56px;}
+  #introduceWrap07 .scrollBox02 .textBox .text02{font-size: 30px;}
+  #introduceWrap07 .scrollBox03 p{font-size: 46px;}
+  #introduceWrap07 .scrollBox04  .title{font-size: 36px;}
+  #introduceWrap07 .scrollBox04  .infoBox p,
+  #introduceWrap07 .scrollBox04  .infoBox .text03,
+  #introduceWrap07 .scrollBox04  .infoBox .box em,
+  #introduceWrap07 .scrollBox04  .infoBox .text04,
+  #introduceWrap07 .scrollBox04  .infoBox .text01{font-size: 20px;}
+  #introduceWrap07 .scrollBox04  .infoBox .text02{font-size: 48px;}
+  #introduceWrap07 .scrollBox04  .text05{font-size: 80px;}
+  #introduceWrap07 .scrollBox04  .infoBox .box{width: 350px; height: 350px;}
+  #introduceWrap07 .introduceBox{display: block; height: auto; width: auto;}
+  #introduceWrap07 .scrollBox{padding: 0 20px; width: auto; position: static;}
+  #introduceWrap07 .scrollBox02{padding: 80px 20px;}
+  #introduceWrap07 .scrollBox04{padding: 120px 20px 85px;}
+  #introduceWrap07 .scrollBox04,
+  #introduceWrap07 .scrollBox01,
+  #introduceWrap07 .scrollBox02{ height: auto;}
+
+}
+
+@media (max-width: 1024px){
+
+  #introduceWrap07 .scrollBox02 .box{height: 580px; border: 10px solid #4C4C4C; border-radius: 5px;}
+  #introduceWrap07 .scrollBox02 .top{margin-bottom: 87px; padding: 55px 20px; border-radius: 10px;}
+  #introduceWrap07 .scrollBox02 .top .title{font-size: 32px;}
+  #introduceWrap07 .scrollBox02 .textBox .text01{margin-bottom: 40px; font-size: 32px;}
+  #introduceWrap07 .scrollBox02 .textBox .text02{font-size: 26px;}
+
+  #introduceWrap07 .scrollBox03 p{font-size: 36px;}
+
+  #introduceWrap07 .scrollBox04 .layoutBox{flex-direction: column; gap: 30px 0;}
+  #introduceWrap07 .scrollBox04 .title{font-size: 30px;}
+  #introduceWrap07 .scrollBox04 .infoBox p,
+  #introduceWrap07 .scrollBox04 .infoBox .text03,
+  #introduceWrap07 .scrollBox04 .infoBox .box em,
+  #introduceWrap07 .scrollBox04 .infoBox .text04,
+  #introduceWrap07 .scrollBox04 .infoBox .text01{font-size: 18px;}
+  #introduceWrap07 .scrollBox04 .infoBox .text02{font-size: 28px;}
+  #introduceWrap07 .scrollBox04 .text05{font-size: 70px;}
+  #introduceWrap07 .scrollBox04 .infoBox .box{width: 300px; height: 300px;}
 
 }
 
 @media (max-width: 767px){
 
-  #introduceWrap07 .text02{font-size: 22px;}
+  #introduceWrap07 .scrollBox01 .text02{font-size: 22px;}
+
+  #introduceWrap07 .scrollBox02 .box{height: 480px; border: 10px solid #4C4C4C;}
+  #introduceWrap07 .scrollBox02 .top{margin-bottom: 70px; padding: 50px 0; border-radius: 5px;}
+  #introduceWrap07 .scrollBox02 .top .title{font-size: 28px;}
+  #introduceWrap07 .scrollBox02 .textBox .text01{font-size: 28px;}
+  #introduceWrap07 .scrollBox02 .textBox .text02{font-size: 18px;}
+
+  #introduceWrap07 .scrollBox03 p{font-size: 30px;}
+
+  #introduceWrap07 .scrollBox04 .title{font-size: 24px;}
+  #introduceWrap07 .scrollBox04 .infoBox p,
+  #introduceWrap07 .scrollBox04 .infoBox .text03,
+  #introduceWrap07 .scrollBox04 .infoBox .box em,
+  #introduceWrap07 .scrollBox04 .infoBox .text04,
+  #introduceWrap07 .scrollBox04 .infoBox .text01{font-size: 16px;}
+  #introduceWrap07 .scrollBox04 .infoBox .text02{font-size: 22px;}
+  #introduceWrap07 .scrollBox04 .text05{font-size: 50px;}
+  #introduceWrap07 .scrollBox04 .infoBox .box{width: 250px; height: 250px;}
 
 }
 
 @media (max-width: 480px){
 
-  #introduceWrap07 .text02{font-size: 18px; line-height: 1.5;}
-  #introduceWrap07 .text01 span{font-size: 5.6vw;}
+  #introduceWrap07 .scrollBox01{padding-bottom: 50px;}
+  #introduceWrap07 .scrollBox01 .text02{font-size: 18px; line-height: 1.5;}
+  #introduceWrap07 .scrollBox01 .text01 span{font-size: 5.6vw;}
+
+  #introduceWrap07 .scrollBox03 p{font-size: 26px;}
+  #introduceWrap07 .scrollBox02{padding: 0 20px 60px;}
+  #introduceWrap07 .scrollBox02 .box{height: 300px; border: 5px solid #4C4C4C;}
+  #introduceWrap07 .scrollBox02 .top{margin-bottom: 60px; padding: 45px 20px;}
+  #introduceWrap07 .scrollBox02 .top .title{font-size: 22px;}
+  #introduceWrap07 .scrollBox02 .textBox .text01{font-size: 22px;}
+  #introduceWrap07 .scrollBox02 .textBox .text02{font-size: 16px;}
 
 }
 
 @media (max-width: 414px){
 
-  #introduceWrap07 .text02{font-size: 16px;}
+  #introduceWrap07 .scrollBox01 .text02{font-size: 16px;}
+
+  #introduceWrap07 .scrollBox02 .box{height: 250px; border-radius: 0;}
+  #introduceWrap07 .scrollBox02 .top{margin-bottom: 60px; padding: 40px 20px;}
+  #introduceWrap07 .scrollBox02 .top .title{font-size: 18px;}
+  #introduceWrap07 .scrollBox02 .textBox .text01{font-size: 20px;}
+  #introduceWrap07 .scrollBox02 .textBox .text02{font-size: 16px;}
+
+  #introduceWrap07 p{font-size: 22px;}
+
+  #introduceWrap07 .scrollBox04 .title{font-size: 22px;}
+  #introduceWrap07 .scrollBox04 .infoBox p{line-height: 1.7;}
+  #introduceWrap07 .scrollBox04 .infoBox p,
+  #introduceWrap07 .scrollBox04 .infoBox .text03,
+  #introduceWrap07 .scrollBox04 .infoBox .box em,
+  #introduceWrap07 .scrollBox04 .infoBox .text04,
+  #introduceWrap07 .scrollBox04 .infoBox .text01{font-size: 14px;}
+  #introduceWrap07 .scrollBox04 .infoBox .text02{font-size: 16px;}
+  #introduceWrap07 .scrollBox04 .text05{font-size: 36px;}
+  #introduceWrap07 .scrollBox04 .infoBox .box{width: 200px; height: 200px;}
 
 }
 
 @media (max-width: 360px){
 
-  #introduceWrap07{padding: 40px 0 50px;}
-  #introduceWrap07 .text02{font-size: 14px;}
+  #introduceWrap07{padding: 40px 0 0;}
+  #introduceWrap07 .scrollBox01 .text02{font-size: 14px;}
 
 }
 
 @media (max-width: 320px){
 
   #introduceWrap07 .text02 br{display: none;}
-
-}
-
-/* 소개 영역08 */
-#introduceWrap08{padding: 0 0 186px; background-color: #000;}
-#introduceWrap08 .top{padding: 69px 20px; margin-bottom: 120px; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 40px; overflow: hidden; z-index: 1;}
-#introduceWrap08 .top::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/bg06.svg) no-repeat center; background-size: cover; z-index: -1;}
-#introduceWrap08 .top .title{font-size: 64px; font-weight: 800; color: #fff; text-align: center;}
-#introduceWrap08 .layoutBox{display: flex; align-items: center; gap: 0 140px; justify-content: center;}
-#introduceWrap08 .textBox{flex-shrink: 0;}
-#introduceWrap08 .textBox .text01{margin-bottom: 120px; font-size: 64px; font-weight: 800; color: #fff;}
-#introduceWrap08 .textBox .text02{font-size: 32px; font-weight: 500; color: #fff; line-height: 1.8;}
-#introduceWrap08 .box{height: 822px; border: 20px solid #4C4C4C; border-radius: 10px; overflow: hidden;}
-#introduceWrap08 .box img{display: block; width: 100%; height: 100%; object-fit: cover;}
-
-@media (max-width: 1600px){
-
-  #introduceWrap08 .layoutBox{flex-direction: column; gap: 30px 0;}
-  #introduceWrap08 .box{width: 100%;}
-  #introduceWrap08 .textBox .text01{margin-bottom: 68px; text-align: center;}
-  #introduceWrap08 .textBox .text02{text-align: center;}
-
-}
-
-@media (max-width: 1199px){
-
-  #introduceWrap08 .top{border-radius: 20px;}
-  #introduceWrap08 .top .title{font-size: 46px;}
-  #introduceWrap08 .textBox .text01{font-size: 56px;}
-  #introduceWrap08 .textBox .text02{font-size: 30px;}
-
-}
-
-@media (max-width: 1024px){
-
-  #introduceWrap08 .box{height: 580px; border: 10px solid #4C4C4C; border-radius: 5px;}
-  #introduceWrap08 .top{margin-bottom: 87px; padding: 55px 20px; border-radius: 10px;}
-  #introduceWrap08 .top .title{font-size: 32px;}
-  #introduceWrap08 .textBox .text01{margin-bottom: 40px; font-size: 32px;}
-  #introduceWrap08 .textBox .text02{font-size: 26px;}
-
-}
-
-@media (max-width: 767px){
-
-  #introduceWrap08{padding: 0 0 100px;}
-  #introduceWrap08 .box{height: 480px; border: 10px solid #4C4C4C;}
-  #introduceWrap08 .top{margin-bottom: 70px; padding: 50px 20px; border-radius: 5px;}
-  #introduceWrap08 .top .title{font-size: 28px;}
-  #introduceWrap08 .textBox .text01{font-size: 28px;}
-  #introduceWrap08 .textBox .text02{font-size: 18px;}
-
-}
-
-@media (max-width: 480px){
-
-  #introduceWrap08 .box{height: 300px; border: 5px solid #4C4C4C;}
-  #introduceWrap08 .top{margin-bottom: 60px; padding: 45px 20px;}
-  #introduceWrap08 .top .title{font-size: 22px;}
-  #introduceWrap08 .textBox .text01{font-size: 22px;}
-  #introduceWrap08 .textBox .text02{font-size: 16px;}
-
-}
-
-@media (max-width: 480px){
-
-  #introduceWrap08 .box{height: 250px; border-radius: 0;}
-  #introduceWrap08 .top{margin-bottom: 60px; padding: 40px 20px;}
-  #introduceWrap08 .top .title{font-size: 20px;}
-  #introduceWrap08 .textBox .text01{font-size: 20px;}
-  #introduceWrap08 .textBox .text02{font-size: 16px;}
-
-}
-
-@media (max-width: 320px){
-
-  #introduceWrap08 .textBox .text02 br{display: none;}
-
-}
-
-/* 소개 영역09 */
-#introduceWrap09{height: 100vh; padding: 120px 0 85px; background: url(../images/main/bg03.svg)no-repeat center; background-size: cover;}
-#introduceWrap09 .title{margin-bottom: 55px; text-align: center; font-size: 48px; font-weight: 700; color: #fff;}
-#introduceWrap09 .layoutBox{display: flex; justify-content: center; align-items: center; gap: 0 80px;}
-#introduceWrap09 .infoBox:nth-of-type(1) .box{background-color: rgba(7, 159, 224, 0.66);
-}
-#introduceWrap09 .infoBox:nth-of-type(2) .box{background-color: rgba(160, 39, 73, 0.66);}
-#introduceWrap09 .infoBox{text-align: center;}
-#introduceWrap09 .infoBox .text01{display: block; margin-bottom: 20px; font-size: 24px; font-weight: 700; color: #fff;}
-#introduceWrap09 .infoBox .text02{margin-bottom: 7px; font-size: 54px; font-weight: 700; color: #fff; line-height: 1.1;}
-#introduceWrap09 .infoBox .text03{font-size: 24px; font-weight: 700; color: #fff;}
-#introduceWrap09 .infoBox .box{margin-bottom: 20px; display: flex; flex-direction: column; gap: 10px 0; align-items: center; justify-content: center; width: 427px; height: 427px; border-radius: 50%; text-align: center;}
-#introduceWrap09 .infoBox .box em{display: block; font-size: 24px; font-weight: 700; color: #fff;}
-#introduceWrap09 .infoBox .text04{display: block; text-align: center; font-size: 24px; font-weight: 700; color: #fff;}
-#introduceWrap09 .infoBox p{text-align: center; color: #fff; font-size: 24px; font-weight: 700; line-height: 2;}
-#introduceWrap09 .text05{flex-shrink: 0; color: #fff; font-size: 96px; font-weight: 800;}
-
-@media (max-width: 1199px){
-
-  #introduceWrap09 .title{font-size: 36px;}
-  #introduceWrap09 .infoBox p,
-  #introduceWrap09 .infoBox .text03,
-  #introduceWrap09 .infoBox .box em,
-  #introduceWrap09 .infoBox .text04,
-  #introduceWrap09 .infoBox .text01{font-size: 20px;}
-  #introduceWrap09 .infoBox .text02{font-size: 48px;}
-  #introduceWrap09 .text05{font-size: 80px;}
-  #introduceWrap09 .infoBox .box{width: 350px; height: 350px;}
-
-}
-
-@media (max-width: 1024px){
-
-  #introduceWrap09{height: auto;}
-  #introduceWrap09 .layoutBox{flex-direction: column; gap: 30px 0;}
-  #introduceWrap09 .title{font-size: 30px;}
-  #introduceWrap09 .infoBox p,
-  #introduceWrap09 .infoBox .text03,
-  #introduceWrap09 .infoBox .box em,
-  #introduceWrap09 .infoBox .text04,
-  #introduceWrap09 .infoBox .text01{font-size: 18px;}
-  #introduceWrap09 .infoBox .text02{font-size: 28px;}
-  #introduceWrap09 .text05{font-size: 70px;}
-  #introduceWrap09 .infoBox .box{width: 300px; height: 300px;}
-
-}
-
-@media (max-width: 767px){
-
-  #introduceWrap09 .title{font-size: 24px;}
-  #introduceWrap09 .infoBox p,
-  #introduceWrap09 .infoBox .text03,
-  #introduceWrap09 .infoBox .box em,
-  #introduceWrap09 .infoBox .text04,
-  #introduceWrap09 .infoBox .text01{font-size: 16px;}
-  #introduceWrap09 .infoBox .text02{font-size: 22px;}
-  #introduceWrap09 .text05{font-size: 50px;}
-  #introduceWrap09 .infoBox .box{width: 250px; height: 250px;}
-
-}
-
-@media (max-width: 414px){
-
-  #introduceWrap09{padding: 80px 0;}
-  #introduceWrap09 .title{font-size: 22px;}
-  #introduceWrap09 .infoBox p{line-height: 1.7;}
-  #introduceWrap09 .infoBox p,
-  #introduceWrap09 .infoBox .text03,
-  #introduceWrap09 .infoBox .box em,
-  #introduceWrap09 .infoBox .text04,
-  #introduceWrap09 .infoBox .text01{font-size: 14px;}
-  #introduceWrap09 .infoBox .text02{font-size: 16px;}
-  #introduceWrap09 .text05{font-size: 36px;}
-  #introduceWrap09 .infoBox .box{width: 200px; height: 200px;}
 
 }
 
@@ -1007,7 +952,9 @@
 }
 
 /* 상담 영역 */
-#contactWrap{padding: 134px 0 0; background: url(../images/main/bg04.svg)no-repeat center; background-size: cover;}
+#contactWrap{position: relative; padding: 134px 0 0; overflow: hidden; z-index: 1;}
+#contactWrap::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/bg04.svg)no-repeat center; background-size: cover; transform: scale(1.5); transition: all 3s; z-index: -1;}
+#contactWrap.active::after{transform: scale(1);}
 #contactWrap .contactBox{display: flex; gap: 0 0;}
 #contactWrap .contactBox01{width: 993px; position: relative; padding: 76px 184px 76px 0; z-index: 1;}
 #contactWrap .contactBox01::after{content: ''; position: absolute; top:0; left: -100%; right:0; bottom: 0; background-color: rgba(0,0,0,.6); z-index: -1; border-radius: 0 100px 0 0;}

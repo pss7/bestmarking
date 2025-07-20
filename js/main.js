@@ -1,52 +1,66 @@
 
 $(function () {
 
+gsap.registerPlugin(ScrollTrigger);
 
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  const texts = gsap.utils.toArray(".text");
-
-  if (!window.matchMedia("(max-width: 767px)").matches) {
-    // 데스크탑 이상에서만 실행
-    const tl = gsap.timeline({
+ScrollTrigger.matchMedia({
+  "(min-width: 1200px)": () => {
+    const boxCount = 4;
+    const timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: "#introduceWrap06",
+        trigger: "#introduceWrap07",
         start: "top top",
-        end: `+=${texts.length * 800}`, // 텍스트 개수에 따라 스크롤 길이 조절
+        end: `+=${boxCount * 100}%`,
         scrub: true,
         pin: true,
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
       }
     });
 
-    texts.forEach((text) => {
-      tl.to(text, {
-        opacity: 1,
-        y: 0,
-        duration: 0.5,
-      });
-      tl.to(text, {
-        opacity: 0,
-        y: -200,
-        duration: 0.5,
-      }, "+=1.5"); // 유지 시간 조절
-    });
-  } else {
-    // 모바일일 때 텍스트는 기본 상태로 노출 (원하는 경우 추가 스타일 조절 가능)
-    texts.forEach(text => {
-      gsap.set(text, { opacity: 1, y: 0 });
+    timeline.to(".scrollBox01", { yPercent: -100, opacity: 0 }, 0);
+    timeline.fromTo(".scrollBox02", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 0.5);
+
+    timeline.to(".scrollBox02", { yPercent: -100, opacity: 0 }, 1);
+    timeline.fromTo(".scrollBox03", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 1.5);
+
+    timeline.to(".scrollBox03", { yPercent: -100, opacity: 0 }, 2);
+    timeline.fromTo(".scrollBox04", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 2.5);
+  },
+  "(max-width: 767px)": () => {
+    // 모바일에서는 ScrollTrigger 비활성화 및 초기화
+    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+
+    // 애니메이션으로 바뀐 요소들을 원래 상태로 돌리기 (필요하면)
+    gsap.set([".scrollBox01", ".scrollBox02", ".scrollBox03", ".scrollBox04"], {
+      clearProps: "all",
+      opacity: 1,
+      xPercent: 0,
+      yPercent: 0,
     });
   }
+});
 
 
 
 
 
+  
+  $(window).scroll(function () {
+    let scrollPos = $(window).scrollTop();
 
+    $('.scrollElement').each(function () {
+      let elementOffset = $(this).offset().top;
 
+      if (scrollPos + $(window).height() > elementOffset) {
+        $(this).addClass('active');
+      } else {
+        $(this).removeClass('active');
+      }
+    });
+  });
 
-
-
+  //슬라이드
   $("#introduceWrap02 .slick").slick({
     autoplay: true,
     arrows: false,
