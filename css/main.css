@@ -875,8 +875,6 @@
 
 }
 
-
-
 /* 파트너 영역 */
 #partnerWrap{padding: 0 0 87px; background-color: #262626;}
 #partnerWrap .top {margin-bottom: 76px; padding: 55px 0 0; position: relative; height: 645px; background-color: #1D1B1B; background-repeat: no-repeat; background-position: center top; clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%); z-index: 2;}
