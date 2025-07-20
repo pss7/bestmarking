@@ -605,6 +605,83 @@
 
 }
 
+/* 소개 영역08 */
+#introduceWrap08{padding: 0 0 186px; background-color: #000;}
+#introduceWrap08 .top{padding: 69px 20px; margin-bottom: 120px; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 40px; overflow: hidden; z-index: 1;}
+#introduceWrap08 .top::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/bg06.svg) no-repeat center; background-size: cover; z-index: -1;}
+#introduceWrap08 .top .title{font-size: 64px; font-weight: 800; color: #fff; text-align: center;}
+#introduceWrap08 .layoutBox{display: flex; align-items: center; gap: 0 140px; justify-content: center;}
+#introduceWrap08 .textBox{flex-shrink: 0;}
+#introduceWrap08 .textBox .text01{margin-bottom: 120px; font-size: 64px; font-weight: 800; color: #fff;}
+#introduceWrap08 .textBox .text02{font-size: 32px; font-weight: 500; color: #fff; line-height: 1.8;}
+#introduceWrap08 .box{height: 822px; border: 20px solid #4C4C4C; border-radius: 10px; overflow: hidden;}
+#introduceWrap08 .box img{display: block; width: 100%; height: 100%; object-fit: cover;}
+
+@media (max-width: 1600px){
+
+  #introduceWrap08 .layoutBox{flex-direction: column; gap: 30px 0;}
+  #introduceWrap08 .box{width: 100%;}
+  #introduceWrap08 .textBox .text01{margin-bottom: 68px; text-align: center;}
+  #introduceWrap08 .textBox .text02{text-align: center;}
+
+}
+
+@media (max-width: 1199px){
+
+  #introduceWrap08 .top{border-radius: 20px;}
+  #introduceWrap08 .top .title{font-size: 46px;}
+  #introduceWrap08 .textBox .text01{font-size: 56px;}
+  #introduceWrap08 .textBox .text02{font-size: 30px;}
+
+}
+
+@media (max-width: 1024px){
+
+  #introduceWrap08 .box{height: 580px; border: 10px solid #4C4C4C; border-radius: 5px;}
+  #introduceWrap08 .top{margin-bottom: 87px; padding: 55px 20px; border-radius: 10px;}
+  #introduceWrap08 .top .title{font-size: 32px;}
+  #introduceWrap08 .textBox .text01{margin-bottom: 40px; font-size: 32px;}
+  #introduceWrap08 .textBox .text02{font-size: 26px;}
+
+}
+
+@media (max-width: 767px){
+
+  #introduceWrap08{padding: 0 0 100px;}
+  #introduceWrap08 .box{height: 480px; border: 10px solid #4C4C4C;}
+  #introduceWrap08 .top{margin-bottom: 70px; padding: 50px 20px; border-radius: 5px;}
+  #introduceWrap08 .top .title{font-size: 28px;}
+  #introduceWrap08 .textBox .text01{font-size: 28px;}
+  #introduceWrap08 .textBox .text02{font-size: 18px;}
+
+}
+
+@media (max-width: 480px){
+
+  #introduceWrap08 .box{height: 300px; border: 5px solid #4C4C4C;}
+  #introduceWrap08 .top{margin-bottom: 60px; padding: 45px 20px;}
+  #introduceWrap08 .top .title{font-size: 22px;}
+  #introduceWrap08 .textBox .text01{font-size: 22px;}
+  #introduceWrap08 .textBox .text02{font-size: 16px;}
+
+}
+
+@media (max-width: 480px){
+
+  #introduceWrap08 .box{height: 250px; border-radius: 0;}
+  #introduceWrap08 .top{margin-bottom: 60px; padding: 40px 20px;}
+  #introduceWrap08 .top .title{font-size: 20px;}
+  #introduceWrap08 .textBox .text01{font-size: 20px;}
+  #introduceWrap08 .textBox .text02{font-size: 16px;}
+
+}
+
+@media (max-width: 320px){
+
+  #introduceWrap08 .textBox .text02 br{display: none;}
+
+}
+
 /* 소개 영역09 */
 #introduceWrap09{height: 100vh; padding: 120px 0 85px; background: url(../images/main/bg03.svg)no-repeat center; background-size: cover;}
 #introduceWrap09 .title{margin-bottom: 55px; text-align: center; font-size: 48px; font-weight: 700; color: #fff;}
