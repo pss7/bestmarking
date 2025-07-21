@@ -18,7 +18,12 @@ $(function () {
         }
       });
 
-      timeline.to(".scrollBox01", { yPercent: -100, opacity: 0 }, 0);
+      timeline.to(".scrollBox01", {
+        yPercent: -100,
+        opacity: 1,
+        onComplete: () => document.querySelector(".scrollBox01").style.display = "none",
+        onReverseComplete: () => document.querySelector(".scrollBox01").style.display = "block",
+      }, 0);
       timeline.fromTo(".scrollBox02", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1 }, 0.5);
       timeline.to(".scrollBox02", {
         yPercent: -100,
