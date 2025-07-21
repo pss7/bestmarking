@@ -552,8 +552,8 @@
 
 /* 소개 영역07 */
 #introduceWrap07{background-color: #000; overflow: hidden;}
-#introduceWrap07 .introduceBox{display: flex; width: 400vw; height: 100vh; overflow: hidden;}
-#introduceWrap07 .scrollBox{width: 100vw; height: 100vh; position: absolute;
+#introduceWrap07 .introduceBox{display: flex; height: 100vh; overflow: hidden;}
+#introduceWrap07 .scrollBox{width: 100%; height: 100vh; position: absolute;
   top: 0; left: 0;}
 #introduceWrap07 .scrollBox01 .text01{max-width: 1454px; height: 1007px; margin: 0 auto; display: flex; justify-content: center; align-items: center; gap: 0 80px; background: url(../images/main/bg05.svg)no-repeat center; background-size: contain; text-align: center; letter-spacing: -1px;}
 #introduceWrap07 .scrollBox01 .text01 span{font-size: 96px; font-weight: 800; color: #fff; line-height: 1.1;}

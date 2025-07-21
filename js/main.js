@@ -10,7 +10,7 @@ $(function () {
         scrollTrigger: {
           trigger: "#introduceWrap07",
           start: "top top",
-          end: `+=${boxCount * 110}%`,
+          end: `+=${boxCount * 100}%`,
           scrub: true,
           pin: true,
           anticipatePin: 2,
