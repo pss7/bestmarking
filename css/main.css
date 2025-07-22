@@ -119,6 +119,7 @@
 #introduceWrap01 .tabMenu li .tabBtn.active{background-color: #079FE0; border-radius: 50px;}
 #introduceWrap01 .tabContent{position: relative; max-width: 1200px; height: 0; padding-top: 39%; margin: 0 auto; border: 20px solid #202020;}
 #introduceWrap01 .tabContent .img img{position: absolute; top:0; left:0; right:0; bottom: 0; display: block; width: 100%; height: 100%; object-fit: cover;}
+#introduceWrap01 .tabContent .img video{position: absolute; top:0; left:0; right:0; bottom: 0; display: block; width: 100%; height: 100%; object-fit: cover;}
 #introduceWrap01 .tabContent .tabImg{width: 1680px; position: absolute; left:50%; right:0; bottom: -118px; transform: translateX(-50%);}
 #introduceWrap01 .tabContent .tabImg img{display: block; max-width: 100%;}
 
@@ -251,6 +252,7 @@
 #introduceWrap02 .markingMachineBox .textBox span strong{font-weight: 700;}
 #introduceWrap02 .markingMachineBox .box{position: relative; width: 800px; height: 627px; border-radius: 20px; overflow: hidden;}
 #introduceWrap02 .markingMachineBox .box img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#introduceWrap02 .markingMachineBox .box video{display: block; width: 100%; height: 100%; object-fit: cover;}
 #introduceWrap02 .imgBox02{margin-bottom: 40px; display: flex; gap: 0 40px;}
 #introduceWrap02 .imgBox02 img{display: block; width: 100%; margin-bottom: 40px;}
 #introduceWrap02 .imgBox02 img:last-child{margin-bottom: 0;}
@@ -570,6 +572,7 @@
 #introduceWrap07 .scrollBox02 .textBox .text02{font-size: 32px; font-weight: 500; color: #fff; line-height: 1.8;}
 #introduceWrap07 .scrollBox02 .box{height: 822px; border: 20px solid #4C4C4C; border-radius: 10px; overflow: hidden;}
 #introduceWrap07 .scrollBox02 .box img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#introduceWrap07 .scrollBox02 .box video{display: block; width: 100%; height: 100%; object-fit: cover;}
 #introduceWrap07 .scrollBox03{display: flex; align-items: center; justify-content: center; background: url(../images/main/bg02.svg)no-repeat center; background-size: cover;}
 #introduceWrap07 .scrollBox03 p{ text-align: center; font-size: 64px; color: #fff; font-weight: 700; line-height: 1.8; word-break: keep-all;} 
 #introduceWrap07 .scrollBox04{padding: 120px 0 85px; background: url(../images/main/bg03.svg)no-repeat center; background-size: cover;}
@@ -969,8 +972,10 @@
 #contactWrap .contactBox01 form .layoutBox{display: flex; align-items: center;}
 #contactWrap .contactBox01 form .layoutBox01{gap: 0 32px;}
 #contactWrap .contactBox01 form .layoutBox02{gap: 0 58px;}
-#contactWrap .contactBox01 form .inputRadioBox label{display: flex; gap: 0 8px; align-items: center; color: #fff; cursor: pointer;}
+#contactWrap .contactBox01 form .inputRadioBox label{position: relative; display: flex; gap: 0 8px; align-items: center; color: #fff; cursor: pointer;}
 #contactWrap .contactBox01 form .inputRadioBox label::before{content: ''; margin-top: -1px; width: 16px; height: 16px; border: 1px solid #fff; border-radius: 50%;}
+#contactWrap .contactBox01 form .inputRadioBox input:checked + label::before{border: 1px solid #0071E4;}
+#contactWrap .contactBox01 form .inputRadioBox input:checked + label::after{content: ''; position: absolute; top: 5px; left: 5px; width: 8px; height: 8px; border-radius: 50%; background-color: #0071E4;}
 #contactWrap .contactBox01 form .inputTextBox input{padding:0 20px; width: 246px; height: 44px; border: 1px solid #fff; border-radius: 5px; background-color: transparent; color: #fff;} 
 #contactWrap .contactBox01 form .inputTextBox input::placeholder{color: #fff;}
 #contactWrap .contactBox01 form .customSelectBox{position: relative;}
