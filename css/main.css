@@ -252,7 +252,7 @@
 #introduceWrap02 .markingMachineBox .textBox span strong{font-weight: 700;}
 #introduceWrap02 .markingMachineBox .box{position: relative; width: 800px; height: 627px; border-radius: 20px; overflow: hidden;}
 #introduceWrap02 .markingMachineBox .box img{display: block; width: 100%; height: 100%; object-fit: cover;}
-#introduceWrap02 .markingMachineBox .box video{display: block; width: 100%; height: 100%; object-fit: cover;}
+#introduceWrap02 .markingMachineBox .box video{position: absolute; top:0; left:0; right:0; bottom: 0; display: block; width: 100%; height: 100%; object-fit: cover;}
 #introduceWrap02 .imgBox02{margin-bottom: 40px; display: flex; gap: 0 40px;}
 #introduceWrap02 .imgBox02 > div{width: 50%;}
 #introduceWrap02 .imgBox02 img{display: block; width: 100%; margin-bottom: 40px;}
