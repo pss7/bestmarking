@@ -119,7 +119,7 @@
 #introduceWrap01 .tabMenu li .tabBtn.active{background-color: #079FE0; border-radius: 50px;}
 #introduceWrap01 .tabContent{position: relative; max-width: 1200px; height: 0; padding-top: 39%; margin: 0 auto; border: 20px solid #202020;}
 #introduceWrap01 .tabContent .img img{position: absolute; top:0; left:0; right:0; bottom: 0; display: block; width: 100%; height: 100%; object-fit: cover;}
-#introduceWrap01 .tabContent .img video{position: absolute; top:0; left:0; right:0; bottom: 0; display: block; width: 100%; height: 100%; object-fit: cover;}
+#introduceWrap01 .tabContent .video video{position: absolute; top:0; left:0; right:0; bottom: 0; display: block; width: 100%; height: 100%; object-fit: cover;}
 #introduceWrap01 .tabContent .tabImg{width: 1680px; position: absolute; left:50%; right:0; bottom: -118px; transform: translateX(-50%);}
 #introduceWrap01 .tabContent .tabImg img{display: block; max-width: 100%;}
 
@@ -254,7 +254,10 @@
 #introduceWrap02 .markingMachineBox .box img{display: block; width: 100%; height: 100%; object-fit: cover;}
 #introduceWrap02 .markingMachineBox .box video{display: block; width: 100%; height: 100%; object-fit: cover;}
 #introduceWrap02 .imgBox02{margin-bottom: 40px; display: flex; gap: 0 40px;}
+#introduceWrap02 .imgBox02 > div{width: 50%;}
 #introduceWrap02 .imgBox02 img{display: block; width: 100%; margin-bottom: 40px;}
+#introduceWrap02 .imgBox02 .video{border: 7px solid #FF2D2D; border-radius: 17px; overflow: hidden;}
+#introduceWrap02 .imgBox02 .video video{display: block; width: 100%; height: 100%; object-fit: cover;}
 #introduceWrap02 .imgBox02 img:last-child{margin-bottom: 0;}
 #introduceWrap02 .slide{width: 796px; height: 456px; margin-bottom: 6.25vw;}
 #introduceWrap02 .slide img{display: block; width: 100%; height: 100%; object-fit: cover;}
